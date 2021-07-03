@@ -39,8 +39,23 @@ app.get("/", function(req, res){
 
 });
 
+app.post('/delete', function(req, res){
+  var checkID = req.body.button;
+
+  Post.deleteOne({_id: checkID}, function(err){
+  if(err){
+    console.log(err)
+  } else {
+    console.log("Item deleted")
+  }
+ });
+ res.redirect("/")  
+})
+
 app.get("/about", function(req, res){
   res.render("about", {aboutContent: aboutContent});
+
+
 });
 
 app.get("/contact", function(req, res){
