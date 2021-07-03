@@ -3,6 +3,15 @@ html {
   position: relative;
 }
 
+button {
+  background-color: #f44336;
+  border: none;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
