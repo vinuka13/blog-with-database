@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://admin-vinuka:vinuka13@cluster0.cz3xp.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(mongoDB-url, {useNewUrlParser: true, useUnifiedTopology: true});
 
 var posts = []
 
